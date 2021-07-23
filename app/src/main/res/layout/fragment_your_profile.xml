@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".yourProfileFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <com.google.android.material.appbar.CollapsingToolbarLayout
+           android:id="@+id/collapsingToolbarLayout"
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.001">
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/pillaipp"></ImageView>
+       </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+       <TextView
+           android:layout_width="80dp"
+           android:layout_height="33dp"
+           android:layout_marginBottom="48dp"
+           android:text="NAME:"
+           android:textSize="20dp"
+           android:fontFamily="times"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.048"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/collapsingToolbarLayout"
+           app:layout_constraintVertical_bias="0.1"></TextView>
+
+       <TextView
+           android:id="@+id/fragName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="48dp"
+           android:fontFamily="times"
+           android:textSize="15dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.408"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/collapsingToolbarLayout"
+           app:layout_constraintVertical_bias="0.096"></TextView>
+
+       <TextView
+           android:layout_width="80dp"
+           android:layout_height="33dp"
+           android:layout_marginBottom="48dp"
+           android:fontFamily="times"
+           android:text="EMAIL:"
+           android:textSize="20dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.048"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/collapsingToolbarLayout"
+           app:layout_constraintVertical_bias="0.222"></TextView>
+
+       <TextView
+           android:id="@+id/fragEmail"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="48dp"
+           android:fontFamily="times"
+           android:textSize="15dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.408"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/collapsingToolbarLayout"
+           app:layout_constraintVertical_bias="0.225"></TextView>
+
+       <TextView
+           android:layout_width="80dp"
+           android:layout_height="33dp"
+           android:layout_marginBottom="48dp"
+           android:fontFamily="times"
+           android:text="PHONE:"
+           android:textSize="20dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.048"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/collapsingToolbarLayout"
+           app:layout_constraintVertical_bias="0.351"></TextView>
+
+       <TextView
+           android:id="@+id/fragPhone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="48dp"
+           android:fontFamily="times"
+           android:textSize="15dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.408"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/collapsingToolbarLayout"
+           app:layout_constraintVertical_bias="0.35"></TextView>
+
+       <TextView
+           android:layout_width="99dp"
+           android:layout_height="29dp"
+           android:layout_marginBottom="48dp"
+           android:fontFamily="times"
+           android:text="BRANCH:"
+           android:textSize="20dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.048"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/collapsingToolbarLayout"
+           app:layout_constraintVertical_bias="0.471"></TextView>
+
+       <TextView
+           android:id="@+id/fragBranch"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="48dp"
+           android:fontFamily="times"
+           android:textSize="15dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.408"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/collapsingToolbarLayout"
+           app:layout_constraintVertical_bias="0.472"></TextView>
+
+       <TextView
+           android:layout_width="130dp"
+           android:layout_height="37dp"
+           android:layout_marginBottom="48dp"
+           android:fontFamily="times"
+           android:text="ID NUMBER:"
+           android:textSize="20dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.045"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/collapsingToolbarLayout"
+           app:layout_constraintVertical_bias="0.588"></TextView>
+
+       <TextView
+           android:id="@+id/fragId"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="48dp"
+           android:fontFamily="times"
+           android:textSize="15dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.408"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/collapsingToolbarLayout"
+           app:layout_constraintVertical_bias="0.590"></TextView>
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

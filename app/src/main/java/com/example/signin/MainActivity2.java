@@ -3,6 +3,7 @@ package com.example.signin;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -27,8 +28,29 @@ public class MainActivity2 extends AppCompatActivity {
         profile_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this , replaceActivity.class);
+                intent.putExtra("something" , 1);
+                startActivity(intent);
 
             }
         });
+        contact_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this , replaceActivity.class);
+                intent.putExtra("something" , 3);
+                startActivity(intent);
+            }
+        });
+
+        calender_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this,replaceActivity.class);
+                intent.putExtra("something" , 2);
+                startActivity(intent);
+            }
+        });
+
     }
 }

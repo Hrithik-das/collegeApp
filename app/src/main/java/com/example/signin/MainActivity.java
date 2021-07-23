@@ -40,13 +40,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
             String username = email.getText().toString();
             String Password = password.getText().toString();
-            if (TextUtils.isEmpty(username)){
-                email.setError("Field required");
-            }
-            if (TextUtils.isEmpty(Password)){
-                email.setError("Field required");
-            }
-            else{
+                if (TextUtils.isEmpty(username)  ) {
+                    email.setError("Field required");
+                }
+                else if(TextUtils.isEmpty(Password)) {
+                    password.setError("Field required");
+                }
+
+                else
+                    {
                 signin(username,Password);
             }
 
